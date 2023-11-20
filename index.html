@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <!--Notes from DIO's "Tags form" class below-->
+    <form name="signup" autocomplete="off" method="post" action="server/website name" onsubmit="alert('I sent the form');">
+        Name: <input type="text" name="name"><br><br>
+        Age: <input type="number" name="age"><br><br>
+        Password: <input type="password" name="password"><br><br>
+        <button type="submit">Send</button><br><br>
+        <hr>
+        <!--Below study notes from DIO's "Tag input and its types" class-->
+        <label>Text:</label><input type="text"><br><br>
+        <label>Number:</label><input type="number" min="0" max="99" step="5"><br><br>
+        <label>Range:</label><input type="range" min="0" max="100" value="90"><br><br>
+        <label>Color:</label><input type="color"><br><br>
+        <label>Email:</label><input type="email"><br><br>
+        <label>Url:</label><input type="url"><br><br>
+        <label>Date:</label><input type="date"><br><br>
+        <label>Week:</label><input type="week"><br><br>
+        <label>Month:</label><input type="month"><br><br>
+        <label>Checkbox:</label><input type="checkbox"><label></label><input type="checkbox"><br><br>
+        <label>Radio:</label><input type="radio" name="accepted"><label></label><input type="radio" name="accepted">
+        <label>Hidden:</label><input type="hidden"><br><br>
+        <label>File:</label><input type="file" ><br><br>
+        <label>Search:</label><input type="search"><br><br>
+        <label>Button:</label><input type="submit">
+        <hr>
+        <!--Below study notes from DIO's "Checkbox e Radio" class-->
+        <h3>You selected: Pepperoni Pizza</h3>
+        <p>What options do you want?</p>
+        <input type="checkbox" name="opcinal[]" value="cheese"> + cheese <br>
+        <input type="checkbox" name="opcinal[]" value="pepperoni"> + pepperoni <br>
+        <input type="checkbox" name="opcinal[]" value="onion"> + onion <br>
+        <input type="checkbox" name="opcinal[]" value="olive"> + olive <br>
+        <p>Filled edge?</p>
+        <input type="radio" name="edge" value="yes"> Yes <br>
+        <input type="radio" name="edge" value="no"> No <br>
+        <p>Drink:</p>
+        <input type="radio" name="drink" value="juice"> Juice <br>
+        <input type="radio" name="drink" value="refrigerator"> Refrigerator <br>
+        <input type="radio" name="drink" value="water"> Water <br>
+        <input type="radio" name="drink" value="none"> None <br><br>
+        <button type="submit">Send request</button><br><br>     
+    </form>
+    <hr>
+    <!--Below study notes from DIO's "Button and its types" class-->
+    <form onsubmit="">
+        <label>*Name:</label><input type="text" name="name"><br><br>
+        <label>*Age:</label><input type="number" name="age"><br><br>
+        <label>*Password:</label><input type="password" name="password"><br><br>
+        <button type="button" onclick="alert('I clicked here')">Click here</button><br><br>
+        <button type="button" onmouseover="alert('I passed here')">Click here</button><br><br>
+        <button type="reset">Clean</button><br><br>
+        <button type="submit">Send</button>
+    </form>
+    <hr>
+    <form onsubmit="" method="get">
+        <label>Name:</label><input type="text" name="name"><br><br>
+        <label>Office:</label>
+        <select name="role">
+            <option selected value="">Select the position</option>
+            <option value="ceo">CEO</option>
+            <option value="manager">Manager</option>
+            <option value="administrative">Administrative</option>
+        </select><br><br>
+        <label>Subject:</label><input type="text" name="subject"><br><br>
+        <!--Below study notes from DIO's "Textarea" class-->
+        <label>Message:</label><br><br>
+        <textarea name="message" id="" cols="30" rows="10"></textarea><br><br>
+        <button type="submit">Send</button>
+    </form>
+    <hr>
+</body>
+</html>
